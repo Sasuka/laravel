@@ -53,4 +53,7 @@ Route::group(['prefix'=>'menu'], function (){
         echo 'Đây là bún cha';
     }) ;
 });
+Route::get('call-master', function (){
+   return view('views.sub');
+});
 
