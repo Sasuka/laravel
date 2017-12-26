@@ -9,6 +9,8 @@
     This is my sub
     {{$name}}
     {!! $name !!}
+    <hr>
+    {{ $diem or 'Biến đó không tồn tại' }}
 @stop
 
 
