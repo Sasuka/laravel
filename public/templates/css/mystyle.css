@@ -1,0 +1,24 @@
+#wrapper {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#header {
+    width: auto;
+    height: 200px;
+    background: #adda;
+
+}
+
+#content {
+    width: auto;
+    height: 500px;
+    background: #afff0e;
+}
+
+#footer {
+    width: auto;
+    height: 200px;
+    background: #ffd605;
+}

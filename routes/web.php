@@ -54,6 +54,15 @@ Route::group(['prefix'=>'menu'], function (){
     }) ;
 });
 Route::get('call-master', function (){
-   return view('views.sub');
+   return view('views.layout');
+});
+Route::get('url/asset',function (){
+   return asset('public/templates/css/mystyle.css',true);
+});
+Route::get('url/to', function (){
+   return URL::to('course',['laravel','tientai'],true);
+});
+Route::get('url/secure', function (){
+   return secure_url('secure-url',['laravel','framework']);
 });
 
