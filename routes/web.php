@@ -65,4 +65,17 @@ Route::get('url/to', function (){
 Route::get('url/secure', function (){
    return secure_url('secure-url',['laravel','framework']);
 });
+Route::get('create/table', function(){
+    Schema::dropIfExists('imports');
+    Schema::create('imports', function ($table) {
+        $table->increments('id');
+        $table->date('create_at');
+        $table->float('sum_cost',5,2);
+        $table->float('pay_before_cost',5,2);
+        $table->boolean('status')->default(1);
+    });
+});
+Route::get('/email', function () {
+    return new App\Mail\Welcome();
+});
 

@@ -16,7 +16,7 @@ class CreateImportsTable extends Migration
     {
         Schema::create('imports', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('create_at');
+            $table->date('create_at');
             $table->float('sum_cost',5,2);
             $table->float('pay_before_cost',5,2);
             $table->boolean('status');
